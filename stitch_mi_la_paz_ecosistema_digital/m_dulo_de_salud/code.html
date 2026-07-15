@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Salud - Mi La Paz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#a7c8ff",
+                        "outline": "#737780",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#799dd6",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#2dbcfe",
+                        "on-background": "#191c1d",
+                        "primary-fixed": "#d5e3ff",
+                        "on-surface": "#191c1d",
+                        "on-secondary-fixed": "#001e2d",
+                        "primary": "#001e40",
+                        "tertiary-fixed": "#83fc8e",
+                        "on-tertiary-container": "#36b24e",
+                        "on-secondary-fixed-variant": "#004c6b",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#66df75",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "surface-container-low": "#f3f4f5",
+                        "secondary-fixed-dim": "#82cfff",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container": "#edeeef",
+                        "on-surface-variant": "#43474f",
+                        "on-tertiary-fixed": "#002106",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-container": "#003366",
+                        "outline-variant": "#c3c6d1",
+                        "on-tertiary-fixed-variant": "#00531a",
+                        "surface": "#f8f9fa",
+                        "tertiary": "#002507",
+                        "surface-container-high": "#e7e8e9",
+                        "tertiary-container": "#003d11",
+                        "on-secondary-container": "#004866",
+                        "secondary": "#00658d",
+                        "secondary-fixed": "#c6e7ff",
+                        "inverse-surface": "#2e3132",
+                        "on-primary-fixed": "#001b3c",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-variant": "#e1e3e4",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-dim": "#d9dadb",
+                        "background": "#f8f9fa",
+                        "surface-tint": "#3a5f94"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max-width": "1200px",
+                        "stack-lg": "48px",
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "stack-md": "24px",
+                        "margin-mobile": "16px",
+                        "stack-sm": "12px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Atkinson Hyperlegible Next"],
+                        "headline-lg": ["Atkinson Hyperlegible Next"],
+                        "label-lg": ["Atkinson Hyperlegible Next"],
+                        "body-md": ["Atkinson Hyperlegible Next"],
+                        "headline-lg-mobile": ["Atkinson Hyperlegible Next"],
+                        "headline-md": ["Atkinson Hyperlegible Next"],
+                        "label-md": ["Atkinson Hyperlegible Next"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-lg": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "18px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        body { font-family: 'Atkinson Hyperlegible Next', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col md:flex-row pb-20 md:pb-0">
+<!-- NavigationDrawer (Web) -->
+<nav class="hidden lg:flex flex-col fixed left-0 top-0 h-screen py-stack-md w-72 bg-surface-container-low border-r border-outline-variant z-40">
+<div class="px-gutter mb-stack-md flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="A clean, minimalist 3D rendering of an abstract profile avatar icon. It is brightly lit with a white and soft gray color palette. A subtle touch of primary blue is used for shading to match a modern institutional design system. Professional, corporate, yet approachable." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_sDiYuqfqVjF_TkdUkWuZfoOj5RqmgQHNSOsTKSshCdI9JGje3Bi2myFsSmMRZRDnEpjGOw8Kcanv4WWeefrmusg7Cuh-CJr2okrf_GEQL9Gn9b1_-MHl-tiV2AeOHL4Gh2LJvFXxZHucNSDYRbTPQ6mARJA2pHvBXoABeFilW2afaYmNJ8CPMXt86RcaZ-GmRRz3CK9tUyIptfsUTES4hOkjYm0wxBAMRnuh5AS-LdmJGf5tqVrk4KV5ROYSmCgs3hIxJq3_78c"/>
+<div>
+<h2 class="font-label-lg text-label-lg font-bold text-primary">Admin La Paz</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Gestión Ciudadana</p>
+<p class="font-label-md text-label-md text-outline mt-1">v2.1.0</p>
+</div>
+</div>
+<ul class="flex-1 flex flex-col gap-2 pr-4">
+<li>
+<a class="flex items-center gap-3 px-gutter py-3 rounded-r-full text-on-surface-variant hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-lg text-label-lg">Resumen</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-gutter py-3 rounded-r-full text-on-surface-variant hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="font-label-lg text-label-lg">Reportes</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-gutter py-3 rounded-r-full bg-primary-container text-on-primary-container font-bold hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label-lg text-label-lg">Mapa</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-gutter py-3 rounded-r-full text-on-surface-variant hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">campaign</span>
+<span class="font-label-lg text-label-lg">Alertas</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-gutter py-3 rounded-r-full text-on-surface-variant hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-label-lg text-label-lg">Estadísticas</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-gutter py-3 rounded-r-full text-on-surface-variant hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-label-lg text-label-lg">Usuarios</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-gutter py-3 rounded-r-full text-on-surface-variant hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="font-label-lg text-label-lg">Auditoría</span>
+</a>
+</li>
+</ul>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 w-full lg:ml-72 flex flex-col relative min-h-screen">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-16 bg-surface text-primary border-b border-outline-variant shadow-sm sticky top-0 z-30">
+<div class="flex items-center gap-4">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="A crisp, high-resolution user profile photo placeholder. A warm, approachable silhouette of a senior citizen on a soft, light-mode background. Minimalist styling, high contrast for readability, fitting a modern institutional aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ktHK6TU-nU6RAwyahDjDoutEo29yjf-V1F57hcXvE5811t0w1r1AhTLBA2ah27ZNzzi3phLXWg7dVZRLRhYowNOWOiidwWq5-1Ykc4IcUS-oDJUoaETly_ynfmBbWXYjiScBm9Ticc0YcH7wJx042tiiNXFk6nXQqGyXgk4doV_iObioHoVpcqJ6CFSN3Gp-JYVZhdhw0fTk67KXAZNKaiPTRCh4pv7Q7nziEafaasRh2SrVNzw02F-WbS6Ga4xpJiS2nzemMhA"/>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">Mi La Paz</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-high transition-colors hover:scale-95 duration-100">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</header>
+<!-- Canvas -->
+<div class="p-margin-mobile md:p-margin-desktop flex-1 max-w-[1200px] mx-auto w-full">
+<div class="mb-stack-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-primary">Módulo de Salud</h2>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Próximas citas (Featured Card) -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant hover:shadow-lg transition-shadow duration-300 relative overflow-hidden flex flex-col justify-between min-h-[250px]">
+<div class="absolute right-0 top-0 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-9xl">event</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-on-tertiary-container">event</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider">Próximas citas</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Consulta General - Dr. Mamani</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Centro de Salud Achumani • 15 de Octubre, 10:30 AM</p>
+</div>
+<div class="flex gap-4 mt-auto z-10 relative">
+<button class="bg-primary text-on-primary font-label-lg text-label-lg py-3 px-6 rounded-lg min-h-[56px] flex items-center gap-2 hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined">edit_calendar</span>
+                            Reprogramar
+                        </button>
+<button class="bg-surface-container-lowest text-primary border-2 border-primary font-label-lg text-label-lg py-3 px-6 rounded-lg min-h-[56px] flex items-center gap-2 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">cancel</span>
+                            Cancelar
+                        </button>
+</div>
+</div>
+<!-- Reservar nueva cita -->
+<button class="bg-on-tertiary-container text-on-primary rounded-xl p-6 shadow-sm hover:shadow-lg hover:scale-[1.02] transition-all duration-300 flex flex-col items-center justify-center text-center min-h-[250px] group border-l-4 border-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-5xl mb-4 group-hover:-translate-y-1 transition-transform">add_circle</span>
+<h3 class="font-headline-md text-headline-md font-bold mb-2">Reservar nueva cita</h3>
+<p class="font-body-md text-body-md opacity-90">Medicina general o especialidades</p>
+</button>
+<!-- Mis referencias -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant flex flex-col hover:shadow-md transition-shadow cursor-pointer min-h-[180px]">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">description</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Mis referencias</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-1">Derivaciones a hospitales de 2do y 3er nivel.</p>
+<div class="flex items-center gap-2 text-primary mt-4 font-label-lg text-label-lg">
+                        Ver historial <span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<!-- Familiar autorizado -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant flex flex-col hover:shadow-md transition-shadow cursor-pointer min-h-[180px]">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">family_restroom</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Familiar autorizado</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-1">Gestiona quién puede recoger tus medicamentos.</p>
+<div class="flex items-center gap-2 text-primary mt-4 font-label-lg text-label-lg">
+                        Gestionar <span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<!-- Fila virtual -->
+<div class="md:col-span-2 lg:col-span-1 bg-surface-container-low rounded-xl p-6 shadow-sm border border-outline-variant relative overflow-hidden group hover:shadow-md transition-shadow min-h-[180px] flex flex-col">
+<div class="flex items-center gap-3 mb-4 z-10 relative">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined">group</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Fila virtual</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-1 z-10 relative">Obtén tu ticket digital para atención sin hacer cola física.</p>
+<button class="mt-4 bg-primary text-on-primary py-2 px-4 rounded-lg font-label-lg text-label-lg min-h-[48px] self-start flex items-center gap-2 z-10 relative">
+                         Solicitar Ticket <span class="material-symbols-outlined">confirmation_number</span>
+</button>
+<div class="absolute right-[-20px] bottom-[-20px] opacity-10 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-8xl text-secondary">timer</span>
+</div>
+</div>
+<!-- Centros de salud cercanos (Wide Map Card) -->
+<div class="md:col-span-2 lg:col-span-3 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant overflow-hidden flex flex-col md:flex-row h-auto md:h-[300px]">
+<div class="p-6 md:w-1/3 flex flex-col justify-center border-b md:border-b-0 md:border-r border-outline-variant bg-surface-bright">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider">Ubicación</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Centros de salud cercanos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Encuentra postas y centros de salud de primer nivel en tu macrodistrito.</p>
+<button class="bg-surface-container text-primary font-label-lg text-label-lg py-3 px-6 rounded-lg min-h-[56px] flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">my_location</span>
+                            Usar mi ubicación
+                        </button>
+</div>
+<div class="md:w-2/3 h-64 md:h-full relative">
+<img class="w-full h-full object-cover" data-alt="A stylized, light-mode digital map interface centered on La Paz, Bolivia. The map features a clean, minimalist design with soft gray and white tones, accented by subtle primary blue routes and green medical location pins. The aesthetic is modern institutional, prioritizing clarity and ease of reading for senior users." data-location="La Paz" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs7KF5UX7ryykDmngEfo6pKXFVlQNlURZz746VfDpd72yHWJ_avpjq9U_P4_K7WgBauoY69KzfN0mI8o2_3IzSJ79hH6hH6mLGXxLNWr3yhACL2oSdcyMVrYNFwiC4WDpj1PSkgv3QmsZ5nfNQgjG0B19-BqDBfJeWRw0jrlbU217w16MC_BBOOAQSbdCUQuYzHcU1o-bklx_oT525QIjJaI8PDVfGFl9O2NQC62FCevSveSpe6K875uEcQKB37EF17uxYJ0_og3A"/>
+<div class="absolute inset-0 shadow-[inset_0_0_20px_rgba(0,0,0,0.05)] pointer-events-none"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="w-full py-stack-md px-margin-desktop flex flex-col md:flex-row justify-between items-center bg-surface-container-highest border-t border-outline-variant mt-auto">
+<div class="font-label-lg text-label-lg text-primary mb-4 md:mb-0">© 2024 Gobierno Autónomo Municipal de La Paz</div>
+<ul class="flex gap-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacidad</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Accesibilidad</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Contacto</a></li>
+</ul>
+</footer>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface border-t shadow-[0_-4px_20px_rgba(0,0,0,0.1)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant w-16" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label-md text-label-md">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 hover:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">apps</span>
+<span class="font-label-md text-label-md font-bold">Servicios</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant w-16" href="#">
+<span class="material-symbols-outlined mb-1">map</span>
+<span class="font-label-md text-label-md">Mapa</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant w-16" href="#">
+<span class="material-symbols-outlined mb-1">notifications</span>
+<span class="font-label-md text-label-md">Avisos</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant w-16" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-label-md text-label-md">Perfil</span>
+</a>
+</nav>
+</body></html>

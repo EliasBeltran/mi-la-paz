@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mi La Paz - Inicio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#a7c8ff",
+                      "outline": "#737780",
+                      "error-container": "#ffdad6",
+                      "on-primary-container": "#799dd6",
+                      "error": "#ba1a1a",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#2dbcfe",
+                      "on-background": "#191c1d",
+                      "primary-fixed": "#d5e3ff",
+                      "on-surface": "#191c1d",
+                      "on-secondary-fixed": "#001e2d",
+                      "primary": "#001e40",
+                      "tertiary-fixed": "#83fc8e",
+                      "on-tertiary-container": "#36b24e",
+                      "on-secondary-fixed-variant": "#004c6b",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed-dim": "#66df75",
+                      "primary-fixed-dim": "#a7c8ff",
+                      "surface-container-low": "#f3f4f5",
+                      "secondary-fixed-dim": "#82cfff",
+                      "surface-bright": "#f8f9fa",
+                      "surface-container": "#edeeef",
+                      "on-surface-variant": "#43474f",
+                      "on-tertiary-fixed": "#002106",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "primary-container": "#003366",
+                      "outline-variant": "#c3c6d1",
+                      "on-tertiary-fixed-variant": "#00531a",
+                      "surface": "#f8f9fa",
+                      "tertiary": "#002507",
+                      "surface-container-high": "#e7e8e9",
+                      "tertiary-container": "#003d11",
+                      "on-secondary-container": "#004866",
+                      "secondary": "#00658d",
+                      "secondary-fixed": "#c6e7ff",
+                      "inverse-surface": "#2e3132",
+                      "on-primary-fixed": "#001b3c",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed-variant": "#1f477b",
+                      "surface-container-highest": "#e1e3e4",
+                      "surface-variant": "#e1e3e4",
+                      "inverse-on-surface": "#f0f1f2",
+                      "surface-dim": "#d9dadb",
+                      "background": "#f8f9fa",
+                      "surface-tint": "#3a5f94"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "container-max-width": "1200px",
+                      "stack-lg": "48px",
+                      "gutter": "24px",
+                      "margin-desktop": "40px",
+                      "stack-md": "24px",
+                      "margin-mobile": "16px",
+                      "stack-sm": "12px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Atkinson Hyperlegible Next"
+                      ],
+                      "headline-lg": [
+                              "Atkinson Hyperlegible Next"
+                      ],
+                      "label-lg": [
+                              "Atkinson Hyperlegible Next"
+                      ],
+                      "body-md": [
+                              "Atkinson Hyperlegible Next"
+                      ],
+                      "headline-lg-mobile": [
+                              "Atkinson Hyperlegible Next"
+                      ],
+                      "headline-md": [
+                              "Atkinson Hyperlegible Next"
+                      ],
+                      "label-md": [
+                              "Atkinson Hyperlegible Next"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "52px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid theme('colors.outline-variant');
+            box-shadow: 0 4px 20px rgba(0, 30, 64, 0.08);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md pb-24 md:pb-0 md:pl-72 relative min-h-screen">
+<!-- Navigation Drawer (Desktop) -->
+<nav class="hidden lg:flex flex-col fixed left-0 top-0 h-screen py-stack-md w-72 bg-surface-container-low border-r border-outline-variant z-40">
+<div class="px-gutter mb-stack-md flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm border border-outline-variant" data-alt="A professional headshot of a mature woman named Elena, smiling warmly. She is wearing a modern, subtle blue blouse. The lighting is soft and flattering, emphasizing a helpful and trustworthy persona. The background is a slightly blurred, bright office environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ2ZIofbY2-39Pnru_KtTKrzwb3mxiXckE4YLPpfAnNMBYPr65ZkEc9ExnU5Myt1kk_M3HxKo5ZD7Cciwerl4LNhf20YU1SGYl2YjGoKjafN45jcdPx5SI6uOHSzHJU3XebEazVbyA2En9Be3oqC_WWBgQnpGOiaeAfP1oLr5eyR2DFROz0pW4fplWn3NXmiWHwZQPQACjA2MmPiyl_uGQpO2zGUfxte3YVbMFUX8qShbqQRNfzSvk9PPe-so32j0C3PN9cpfQtpo"/>
+<div>
+<div class="font-headline-md text-headline-md font-bold text-primary">Mi La Paz</div>
+<div class="font-label-md text-label-md text-on-surface-variant">Buenas tardes, Elena</div>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto px-unit">
+<!-- Items mapped from intent logic - Dashboard/Resumen -->
+<a class="flex items-center gap-4 px-4 py-3 bg-primary-container text-on-primary-container font-bold rounded-r-full mb-1" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-label-lg text-label-lg">Resumen</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-all rounded-r-full mb-1" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="font-label-lg text-label-lg">Reportes</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-all rounded-r-full mb-1" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label-lg text-label-lg">Mapa</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-all rounded-r-full mb-1" href="#">
+<span class="material-symbols-outlined">campaign</span>
+<span class="font-label-lg text-label-lg">Alertas</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-all rounded-r-full mb-1" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-label-lg text-label-lg">Estadísticas</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-all rounded-r-full mb-1" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-label-lg text-label-lg">Usuarios</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high transition-all rounded-r-full mb-1" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="font-label-lg text-label-lg">Auditoría</span>
+</a>
+</div>
+</nav>
+<!-- Top App Bar (Mobile) -->
+<header class="md:hidden flex justify-between items-center w-full px-margin-mobile h-16 bg-surface text-primary sticky top-0 z-30 shadow-sm border-b border-outline-variant">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover border border-outline-variant" data-alt="A professional headshot of a mature woman named Elena, smiling warmly. She is wearing a modern, subtle blue blouse. The lighting is soft and flattering, emphasizing a helpful and trustworthy persona. The background is a slightly blurred, bright office environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe07KxeveCu2921u-nnRvj29wbLTT0yAM8j9ayb0DrpkVJL-qXRqxzs5S9eK9JvdEwTnquzebzhhDswfN4WS2iyaxe5iozq9ah6LKnvaDSzmqOLgMVWXeBeVRU2crLWo0vL_ACOQ7eDurUbkjKPI2ugMakdBiy0P7YDHCGCtmArj2EAc6eo_mj8djoFFk7wN8d91vEenBlL4jizR86ziBhOF0ac069Xn1GMGKCW98FwFU97c_YCvFD6KgyeY6NOQr_apcu801Sjok"/>
+<div>
+<h1 class="font-label-md text-label-md text-on-surface-variant leading-tight">Buenas tardes, Elena</h1>
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-sm mr-1">location_on</span>
+<span class="font-label-md text-label-md font-bold">Miraflores</span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full hover:bg-surface-container-high transition-colors flex items-center justify-center text-primary relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2.5 h-2.5 bg-error rounded-full border-2 border-surface"></span>
+</button>
+</header>
+<main class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-stack-md space-y-stack-lg">
+<!-- Search Section -->
+<section class="w-full">
+<div class="relative max-w-2xl mx-auto">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant">search</span>
+</div>
+<input class="block w-full pl-12 pr-12 py-4 bg-surface-container-highest border-0 rounded-full text-on-background placeholder-on-surface-variant font-body-md text-body-md focus:ring-2 focus:ring-secondary focus:bg-surface transition-all shadow-inner" placeholder="¿Qué necesitas hacer hoy?" type="text"/>
+<button class="absolute inset-y-0 right-0 pr-4 flex items-center text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">mic</span>
+</button>
+</div>
+</section>
+<!-- Featured Card: Appointment -->
+<section>
+<div class="glass-card rounded-2xl p-6 relative overflow-hidden flex flex-col md:flex-row gap-6 items-center">
+<div class="absolute top-0 left-0 w-2 h-full bg-secondary"></div>
+<div class="flex-shrink-0 w-16 h-16 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+</div>
+<div class="flex-1 text-center md:text-left">
+<span class="font-label-lg text-label-lg text-secondary uppercase tracking-wider block mb-1">Próxima cita médica</span>
+<h2 class="font-headline-md text-headline-md font-bold text-primary mb-2">Hospital La Merced</h2>
+<div class="flex items-center justify-center md:justify-start gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span>21 de Julio</span>
+<span class="mx-2">•</span>
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>09:30 AM</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+<button class="bg-surface text-primary border-2 border-primary font-label-lg text-label-lg py-3 px-6 rounded-lg min-h-[56px] hover:bg-surface-container-low transition-colors flex items-center justify-center gap-2">
+                        Ver detalle
+                    </button>
+<button class="bg-primary text-on-primary font-label-lg text-label-lg py-3 px-6 rounded-lg min-h-[56px] hover:bg-primary-container transition-colors flex items-center justify-center gap-2 shadow-sm">
+                        Reprogramar
+                    </button>
+</div>
+</div>
+</section>
+<!-- Quick Access Bento Grid -->
+<section>
+<h3 class="font-headline-md text-headline-md font-bold text-primary mb-stack-md">Accesos Rápidos</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<button class="bg-surface rounded-xl p-4 flex flex-col items-center justify-center gap-3 border border-outline-variant shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group min-h-[120px]">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">health_and_safety</span>
+</div>
+<span class="font-label-md text-label-md text-center text-on-surface">Salud</span>
+</button>
+<button class="bg-surface rounded-xl p-4 flex flex-col items-center justify-center gap-3 border border-outline-variant shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group min-h-[120px]">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">directions_bus</span>
+</div>
+<span class="font-label-md text-label-md text-center text-on-surface">Transporte</span>
+</button>
+<button class="bg-surface rounded-xl p-4 flex flex-col items-center justify-center gap-3 border border-outline-variant shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group min-h-[120px]">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">report_problem</span>
+</div>
+<span class="font-label-md text-label-md text-center text-on-surface">Reportar problema</span>
+</button>
+<button class="bg-surface rounded-xl p-4 flex flex-col items-center justify-center gap-3 border border-outline-variant shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group min-h-[120px]">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">notifications_active</span>
+</div>
+<span class="font-label-md text-label-md text-center text-on-surface">Alertas</span>
+</button>
+<button class="bg-surface rounded-xl p-4 flex flex-col items-center justify-center gap-3 border border-outline-variant shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group min-h-[120px]">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">description</span>
+</div>
+<span class="font-label-md text-label-md text-center text-on-surface">Trámites</span>
+</button>
+<button class="bg-surface-container-low rounded-xl p-4 flex flex-col items-center justify-center gap-3 border border-outline-variant border-dashed shadow-sm hover:bg-surface-container transition-colors min-h-[120px]">
+<div class="w-12 h-12 rounded-full flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">more_horiz</span>
+</div>
+<span class="font-label-md text-label-md text-center text-on-surface-variant">Más servicios</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] bg-surface rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-md text-label-md">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low p-2 rounded-lg" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="font-label-md text-label-md mt-1">Servicios</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low p-2 rounded-lg" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="font-label-md text-label-md mt-1">Mapa</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low p-2 rounded-lg" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span class="font-label-md text-label-md mt-1">Avisos</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low p-2 rounded-lg" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-md text-label-md mt-1">Perfil</span>
+</a>
+</nav>
+<!-- Prominent Emergency SOS Button -->
+<button aria-label="Emergencia SOS" class="fixed bottom-24 md:bottom-8 right-4 md:right-8 w-16 h-16 bg-error text-on-error rounded-full shadow-lg flex items-center justify-center hover:bg-on-error-container hover:scale-105 transition-all z-40 group">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">sos</span>
+<!-- Tooltip -->
+<span class="absolute right-full mr-4 bg-inverse-surface text-inverse-on-surface font-label-md text-label-md px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            Llamada de Emergencia
+        </span>
+</button>
+</body></html>

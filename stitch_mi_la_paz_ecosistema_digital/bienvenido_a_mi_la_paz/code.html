@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mi La Paz - Welcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#a7c8ff",
+                      "outline": "#737780",
+                      "error-container": "#ffdad6",
+                      "on-primary-container": "#799dd6",
+                      "error": "#ba1a1a",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#2dbcfe",
+                      "on-background": "#191c1d",
+                      "primary-fixed": "#d5e3ff",
+                      "on-surface": "#191c1d",
+                      "on-secondary-fixed": "#001e2d",
+                      "primary": "#001e40",
+                      "tertiary-fixed": "#83fc8e",
+                      "on-tertiary-container": "#36b24e",
+                      "on-secondary-fixed-variant": "#004c6b",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed-dim": "#66df75",
+                      "primary-fixed-dim": "#a7c8ff",
+                      "surface-container-low": "#f3f4f5",
+                      "secondary-fixed-dim": "#82cfff",
+                      "surface-bright": "#f8f9fa",
+                      "surface-container": "#edeeef",
+                      "on-surface-variant": "#43474f",
+                      "on-tertiary-fixed": "#002106",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "primary-container": "#003366",
+                      "outline-variant": "#c3c6d1",
+                      "on-tertiary-fixed-variant": "#00531a",
+                      "surface": "#f8f9fa",
+                      "tertiary": "#002507",
+                      "surface-container-high": "#e7e8e9",
+                      "tertiary-container": "#003d11",
+                      "on-secondary-container": "#004866",
+                      "secondary": "#00658d",
+                      "secondary-fixed": "#c6e7ff",
+                      "inverse-surface": "#2e3132",
+                      "on-primary-fixed": "#001b3c",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed-variant": "#1f477b",
+                      "surface-container-highest": "#e1e3e4",
+                      "surface-variant": "#e1e3e4",
+                      "inverse-on-surface": "#f0f1f2",
+                      "surface-dim": "#d9dadb",
+                      "background": "#f8f9fa",
+                      "surface-tint": "#3a5f94"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "container-max-width": "1200px",
+                      "stack-lg": "48px",
+                      "gutter": "24px",
+                      "margin-desktop": "40px",
+                      "stack-md": "24px",
+                      "margin-mobile": "16px",
+                      "stack-sm": "12px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Atkinson Hyperlegible Next"
+                      ],
+                      "headline-lg": [
+                              "Atkinson Hyperlegible Next"
+                      ],
+                      "label-lg": [
+                              "Atkinson Hyperlegible Next"
+                      ],
+                      "body-md": [
+                              "Atkinson Hyperlegible Next"
+                      ],
+                      "headline-lg-mobile": [
+                              "Atkinson Hyperlegible Next"
+                      ],
+                      "headline-md": [
+                              "Atkinson Hyperlegible Next"
+                      ],
+                      "label-md": [
+                              "Atkinson Hyperlegible Next"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "52px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Atkinson Hyperlegible Next', sans-serif;
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid theme('colors.outline-variant');
+            box-shadow: 0 4px 20px rgba(0, 30, 64, 0.15); /* 15% opacity Deep Blue (primary) */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col relative overflow-hidden">
+<!-- Background Image container with Illimani illustration -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A modern, highly stylized illustration of the city of La Paz, Bolivia, featuring the majestic Illimani mountain prominently in the background. The artwork should have a warm, welcoming institutional style with high contrast for readability, utilizing a color palette of deep blues, soft whites, and subtle sky blues. The composition should be spacious, acting as an elegant backdrop without overwhelming the foreground elements." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCO-k6mx7IvF2EhnRc-CqnXTu5ySLrRci4KQ3lgpg5yJ4UUf4b1XDmtJEB0PheBL7m3flcA50w6ZTzbMcH-6dILk36CL_oplAtPhqHS9ucVX67apldV0j1OXVooVHAmTXEQmCJUqJkSdfquxh8namnv5X5BI21o4mAd_Bl_MN1OwFwmLwgTfkkO__e9mUBRyVC5SDD0Qk5R0hG_qV53nVLxW-h2Ppx4WowMh8214Lg1sJa7a42exQVNwjiYj1-wNa8djAnl_X1Cacg')">
+</div>
+<!-- Gradient overlay to ensure high legibility of text/cards -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/30"></div>
+</div>
+<!-- Main Content Canvas -->
+<main class="relative z-10 flex-grow flex flex-col justify-center items-center px-margin-mobile md:px-margin-desktop py-stack-lg">
+<!-- Welcome Card -->
+<div class="glass-card w-full max-w-md rounded-xl p-stack-md flex flex-col items-center text-center">
+<!-- Logo / Brand Area -->
+<div class="mb-stack-sm flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-6xl mb-unit" style="font-variation-settings: 'FILL' 1;">
+                    location_city
+                </span>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">
+                    Mi La Paz
+                </h1>
+</div>
+<!-- Tagline -->
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">
+                Tu ciudad, sus servicios, un solo lugar
+            </p>
+<!-- Actions -->
+<div class="w-full flex flex-col gap-stack-sm">
+<button class="w-full min-h-[56px] bg-primary text-on-primary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-md">
+<span class="material-symbols-outlined">arrow_forward</span>
+                    Comenzar
+                </button>
+<button class="w-full min-h-[56px] bg-surface text-primary border-2 border-primary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">explore</span>
+                    Explorar como visitante
+                </button>
+</div>
+</div>
+</main>
+<!-- Footer Disclaimer -->
+<footer class="relative z-10 w-full py-stack-md px-margin-mobile text-center">
+<p class="font-body-md text-body-md text-on-surface-variant/80">
+            Prototipo conceptual para Hackatón
+        </p>
+</footer>
+</body></html>
