@@ -35,3 +35,13 @@ Incluye acceso, onboarding, inicio, catálogo, salud (reserva, comprobante, cuid
 ## Decisiones y limitaciones
 
 Las cinco pantallas Stitch disponibles definieron paleta, escala, tarjetas y navegación. Se conservó Atkinson Hyperlegible según `civic_clarity/DESIGN.md`; las pantallas ausentes reutilizan el mismo lenguaje. Los mapas son visuales locales sin claves privadas. Acceso, QR, voz, cámara, calendario, ubicación, rutas y publicación multicanal son simulaciones. No se conectan sistemas reales. Próximos pasos: backend seguro, autenticación oficial, mapas accesibles, auditoría, pruebas automatizadas y validación con usuarios.
+
+## Actualización de flujos y roles
+
+El centro `/demo` permite cambiar entre ciudadano, reportes, salud, médico, mascotas, deportes y administración. Las cuentas son `elena@milapaz.demo`, `operador@milapaz.demo`, `salud@milapaz.demo`, `medico@milapaz.demo`, `mascotas@milapaz.demo`, `deportes@milapaz.demo` y `admin@milapaz.demo`; todas usan `Demo2026`.
+
+El estado se persiste y sincroniza entre pestañas con `localStorage`, eventos de almacenamiento y `BroadcastChannel`. Desde `/demo` se puede restablecer la semilla. Se añadieron mascotas, ruta multimodal, acceso clínico temporal ficticio, agenda sanitaria, chat de reportes y canchas. Consulte `docs/requirements-traceability.md` para el alcance exacto.
+
+Calidad: `npm run lint`, `npm run typecheck`, `npm test` y `npm run build`. Vercel detecta Next.js automáticamente, usa `./` como raíz y no necesita variables de entorno.
+
+**Seguridad:** no introducir datos personales o clínicos reales. Los QR, rutas, consultas, reservas y permisos son demostraciones sin validez institucional.
