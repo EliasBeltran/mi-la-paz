@@ -1,0 +1,4 @@
+import type{Metadata}from'next';import{cookies}from'next/headers';import{SystemDocumentation}from'@/components/documentation/SystemDocumentation';import{TeamDocsGate}from'@/components/documentation/TeamDocsGate';import{TEAM_DOCS_COOKIE,validDocsCookie}from'@/lib/teamDocsAuth';
+export const dynamic='force-dynamic';
+export const metadata:Metadata={title:'Mapa general del sistema | Mi La Paz',description:'Documentación visual interna del prototipo Mi La Paz.',robots:{index:false,follow:false,nocache:true,googleBot:{index:false,follow:false,noimageindex:true}}};
+export default function SystemMapPage({searchParams}:{searchParams:{error?:string}}){const code=process.env.TEAM_DOCS_ACCESS_CODE;const granted=!code||validDocsCookie(cookies().get(TEAM_DOCS_COOKIE)?.value,code);if(!granted)return <TeamDocsGate title="Mapa general del sistema" error={searchParams.error} returnTo="/equipo/mapa-sistema"/>;return <SystemDocumentation/>}
