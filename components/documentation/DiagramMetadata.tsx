@@ -1,0 +1,2 @@
+import Link from'next/link';import type{SystemDiagram}from'@/documentation/diagrams';
+export function DiagramMetadata({diagram}:{diagram:SystemDiagram}){return <div className="diagram-meta"><section><h3>Actores</h3><div>{diagram.actors.map(x=><span key={x}>{x}</span>)}</div></section><section><h3>Requerimientos relacionados</h3><ul>{diagram.requirements.map(x=><li key={x}>{x}</li>)}</ul></section><section><h3>Pantallas relacionadas</h3><div>{diagram.routes.map(x=><Link key={x} href={x}>{x}</Link>)}</div></section><small>Actualizado: {diagram.updatedAt}</small></div>}

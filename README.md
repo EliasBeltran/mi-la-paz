@@ -40,8 +40,22 @@ Las cinco pantallas Stitch disponibles definieron paleta, escala, tarjetas y nav
 
 El centro `/demo` permite cambiar entre ciudadano, reportes, salud, médico, mascotas, deportes y administración. Las cuentas son `elena@milapaz.demo`, `operador@milapaz.demo`, `salud@milapaz.demo`, `medico@milapaz.demo`, `mascotas@milapaz.demo`, `deportes@milapaz.demo` y `admin@milapaz.demo`; todas usan `Demo2026`.
 
-El estado se persiste y sincroniza entre pestañas con `localStorage`, eventos de almacenamiento y `BroadcastChannel`. Desde `/demo` se puede restablecer la semilla. Se añadieron mascotas, ruta multimodal, acceso clínico temporal ficticio, agenda sanitaria, chat de reportes y canchas. Consulte `docs/requirements-traceability.md` para el alcance exacto.
+El estado se persiste y sincroniza entre pestañas con `localStorage`, eventos de almacenamiento y `BroadcastChannel`. Desde `/demo` se puede restablecer la semilla. Se añadieron mascotas, ruta multimodal, acceso clínico temporal ficticio, agenda sanitaria, chat de reportes, canchas y un centro de ayuda en `/ayuda`. Las acciones ciudadanas generan notificaciones y los cambios de los encargados se reflejan en las mismas entidades compartidas. Consulte `docs/requirements-traceability.md` para el alcance exacto.
 
 Calidad: `npm run lint`, `npm run typecheck`, `npm test` y `npm run build`. Vercel detecta Next.js automáticamente, usa `./` como raíz y no necesita variables de entorno.
 
 **Seguridad:** no introducir datos personales o clínicos reales. Los QR, rutas, consultas, reservas y permisos son demostraciones sin validez institucional.
+
+## Documentación visual interna
+
+El mapa Mermaid del sistema está disponible en `/equipo/mapa-sistema` y el wireflow actual en `/equipo/flujo-navegacion`; ninguna ruta se indexa. La primera distingue arquitectura y sitemap, mientras que la pestaña **Flujo de navegación** documenta transiciones producidas por botones reales. Los flujos por actores describen intercambios de responsabilidad y el wireflow presenta cada pantalla como una tarjeta conectable y filtrable.
+
+El último análisis de navegación se realizó el **2026-07-15** directamente sobre el código. Convenciones: **Implementado** funciona localmente, **Simulado** reproduce el recorrido sin integración real, **Parcial** tiene limitaciones visibles y **Desconectado** representa un control sin comportamiento. Para actualizarlo, modifique `documentation/navigation/` cuando cambien rutas o botones y luego regenere o ajuste los inventarios de `docs/navigation-*.md`.
+
+Las rutas están abiertas por defecto; para proteger ambas configure opcionalmente en Vercel:
+
+```env
+TEAM_DOCS_ACCESS_CODE=una-clave-del-equipo
+```
+
+La clave se valida en servidor y nunca se incluye en el JavaScript del navegador. La documentación registra 41 pantallas, 97 acciones principales y las limitaciones actuales; no sustituye pruebas E2E ni garantiza que una operación simulada tenga respaldo institucional. Consulte `docs/system-map.md`, `docs/navigation-screen-inventory.md`, `docs/navigation-actions-inventory.md`, `docs/navigation-audit.md`, `docs/navigation-traceability.md` y `.env.example`.

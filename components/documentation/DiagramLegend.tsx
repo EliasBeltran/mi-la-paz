@@ -1,0 +1,1 @@
+export function DiagramLegend({items}:{items:string[]}){return <section className="diagram-legend" aria-label="Leyenda"><h3>Leyenda</h3>{items.map((x,i)=><span key={x}><i>{i+1}</i>{x}</span>)}</section>}

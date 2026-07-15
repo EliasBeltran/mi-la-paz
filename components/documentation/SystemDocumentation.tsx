@@ -1,0 +1,3 @@
+'use client';import{DiagramHeader}from'./DiagramHeader';import{DiagramTabs}from'./DiagramTabs';
+const changes=['Añadido flujo ciudadano–encargado','Añadido módulo de mascotas','Añadida ruta multimodal','Añadido historial clínico simulado','Añadida agenda de citas','Añadido módulo de canchas'];
+export function SystemDocumentation(){return <main className="system-docs"><DiagramHeader/><div className="docs-notice">Documentación interna del prototipo. Los datos y recorridos mostrados son simulados.</div><DiagramTabs/><section className="recent-changes"><h2>Cambios recientes</h2><ul>{changes.map(x=><li key={x}>{x}</li>)}</ul></section></main>}
